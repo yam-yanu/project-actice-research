@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/github/login', 'LoginController@main');
+Route::get('/github/callback', 'LoginController@callback');
